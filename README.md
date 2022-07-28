@@ -12,4 +12,5 @@
 
 
 ## Images:
-![Current Screenshot as of July 27, 2022](/images/screenshot7-27-2022.png)
+![Screenshot A as of July 27, 2022](/images/screenshot7-27-2022-A.png)
+![Screenshot B as of July 27, 2022](/images/screenshot7-27-2022-B.png)
