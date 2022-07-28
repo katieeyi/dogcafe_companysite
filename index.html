@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dog Cafe</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">
+    <!-- Load Styles -->
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- HTML Follows BEM naming conventions
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list">
+
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="section0" data-nav="Home"  class="your-active-class">
+    <header class="main__hero">
+
+      <div class="hero-images">
+        <div class="overlay">
+      <h1>DOG CAFE</h1>
+      </div>
+      </div>
+    </header>
+    </section>
+    <!-- Each Section has an ID (used for the anchor) and
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="section1" data-nav="About Us"  >
+      <div class="landing__container">
+        <div class ="text">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
+
+        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
+      </div>
+      <div class="image">
+        <img src="https://images.pexels.com/photos/5749816/pexels-photo-5749816.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+      </div>
+    </div>
+    </section>
+    <section id="section2" data-nav="Visit">
+      <div class="landing__container">
+        <div class="image">
+          <img src="https://images.pexels.com/photos/7487524/pexels-photo-7487524.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=10">
+        </div>
+        <div class="text">
+        <h2>Visit</h2>
+        <p>If you'd like to reserve for an event, click here: <a href="#">book reservations</a>.</p>
+
+        <p>Here is the <a href="#">location and map</a> to help you find your way here.</p>
+
+        <p>For a calendar of events, please see follow this <a href="#">link</a>.</p>
+      </div>
+    </div>
+    </section>
+    <section id="section3" data-nav="Location">
+      <div class="landing__container">
+        <div class="text">
+        <h2>Location</h2>
+
+        <p><strong>Address: </strong><br>
+          550 Puppy Drive.<br>
+        Wagtail, MA 60034</p>
+
+        <p><strong>Phone: </strong><br>
+          500-500-1500</p>
+      </div>
+      <div class="image">
+        <img src="images/map.jpg">
+      </div>
+    </div>
+  </section>
+    <section id="section4" data-nav="Contact">
+      <div class="landing__container">
+        <div class="image">
+          <img src="https://images.pexels.com/photos/4936457/pexels-photo-4936457.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+        </div>
+        <div class="text">
+        <h2>Contact Us</h2>
+        <form id="input-form">
+            <!--<label for="name">Name:</label>-->
+            <input class="response" id="name" name="name" type="text" placeholder="Name" required/><br>
+            <!--<label for="date-start">Email:</label>-->
+            <input class="response" id="email" name="email" type="email" placeholder="Email" required/><br>
+            <!--<label for ="date-end">Message:</label>-->
+            <textarea class="response" name="name" rows="8" placeholder="Write your message here" required></textarea><br>
+            <input id="submit-button" type="submit" value="Submit" form="input-form"/>
+        </form>
+    </div>
+    </section>
+
+    <section id="section5" data-nav="Section 5">
+      <div class="landing__container">
+        <div class="text">
+        <h2>Section 5</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
+
+        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
+      </div>
+      <div class="image">
+        <img src="https://images.pexels.com/photos/5812085/pexels-photo-5812085.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+      </div>
+    </div>
+    </section>
+    <img src="icons/up.png"id="up-button" class="fab hide">
+
+
+  </main>
+  <footer class="page__footer">
+      <p>&copy Dog Cafe </p>
+
+  </footer>
+  <!--linking JS file here -->
+  <script src= "app.js"></script>
+
+</body>
+</html>
